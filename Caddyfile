@@ -1,12 +1,19 @@
 :80 {
-	root * /app
+	root * .
 	encode gzip
-	try_files {path} {path}/ /index.php?{query}
 	@php_files {
 		path *.php
 	}
 	route @php_files {
 		php
 	}
+	@not_found {
+		not path *.php *.css *.js *.jpg *.jpeg *.png *.gif *.svg *.ico *.woff *.woff2
+	}
+	route @not_found {
+		rewrite * /index.php?{query}
+		php
+	}
 	file_server
 }
+
