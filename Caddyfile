@@ -1,12 +1,13 @@
 :80 {
 	root * /app
 	encode gzip
-	try_files {path} {path}/ /index.php?{query}
 	@php_files {
 		path *.php
 	}
 	route @php_files {
 		php
 	}
+	try_files {path} {path}/ /index.php?{query}
 	file_server
 }
+
