@@ -4,7 +4,10 @@ COPY . /var/www/html/
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-RUN printf '<Directory /var/www/html>\nDirectoryIndex home.php\n</Directory>' > /etc/apache2/conf-available/home.conf \
-    && a2enconf home
+# Railway necesita que Apache escuche en el puerto dinámico
+ENV PORT=8080
 
-EXPOSE 80
+RUN sed -i 's/80/${PORT}/g' /etc/apache2/ports.conf \
+ && sed -i 's/80/${PORT}/g' /etc/apache2/sites-enabled/000-default.conf
+
+EXPOSE 8080
