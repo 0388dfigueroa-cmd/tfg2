@@ -188,6 +188,35 @@ INSERT INTO productos (nombre, descripcion, precio, categoria, imagen, stock) VA
 ('Carrete Fly Fishing', 'Carrete específico para pesca con mosca', 159.99, 'Carretes', 'img/carreteFlyFishing.webp', 4);
 
 
+-- Zonas Calientes -- 
+
+INSERT INTO zonas_calientes 
+(nombre, ubicacion, especie_principal, dificultad, imagen, descripcion, temporada_best, coordenadas_lat, coordenadas_long) 
+VALUES
+
+('Embalse de Mequinenza', 'Zaragoza, Aragón', 'Siluro,Carpa,Black Bass', 'Media', 'https://www.google.com/maps?q=Embalse+de+Mequinenza', NULL, NULL, NULL, NULL),
+('Delta del Ebro', 'Tarragona, Cataluña', 'Lubina,Dorada,Atún', 'Alta', 'https://www.google.com/maps?q=Delta+del+Ebro', NULL, NULL, NULL, NULL),
+('Embalse de Ribarroja', 'Zaragoza', 'Siluro,Lucioperca', 'Media', 'https://www.google.com/maps?q=Embalse+de+Ribarroja', NULL, NULL, NULL, NULL),
+('Embalse del Ebro', 'Cantabria/Burgos', 'Trucha,Carpa', 'Media', 'https://www.google.com/maps?q=Embalse+del+Ebro', NULL, NULL, NULL, NULL),
+('Río Tajo (Aranjuez)', 'Madrid', 'Carpa,Barbo', 'Media', 'https://www.google.com/maps?q=Aranjuez+rio+Tajo', NULL, NULL, NULL, NULL),
+('Embalse de Orellana', 'Badajoz', 'Black Bass', 'Media', 'https://www.google.com/maps?q=Embalse+de+Orellana', NULL, NULL, NULL, NULL),
+('Embalse de Alcántara', 'Cáceres', 'Black Bass,Lucio', 'Alta', 'https://www.google.com/maps?q=Embalse+de+Alcantara', NULL, NULL, NULL, NULL),
+('Embalse de Cijara', 'Badajoz', 'Lucio', 'Alta', 'https://www.google.com/maps?q=Embalse+de+Cijara', NULL, NULL, NULL, NULL),
+('Embalse de San Juan', 'Madrid', 'Carpa,Black Bass', 'Media', 'https://www.google.com/maps?q=Embalse+de+San+Juan', NULL, NULL, NULL, NULL),
+('Río Ebro (Zaragoza)', 'Aragón', 'Siluro gigante', 'Alta', 'https://www.google.com/maps?q=Rio+Ebro+Zaragoza', NULL, NULL, NULL, NULL),
+('Río Segre', 'Lleida', 'Carpa,Barbo', 'Media', 'https://www.google.com/maps?q=Rio+Segre', NULL, NULL, NULL, NULL),
+('Embalse de Yesa', 'Navarra', 'Trucha,Lucio', 'Media', 'https://www.google.com/maps?q=Embalse+de+Yesa', NULL, NULL, NULL, NULL),
+('Embalse de Sau', 'Barcelona', 'Black Bass', 'Media', 'https://www.google.com/maps?q=Embalse+de+Sau', NULL, NULL, NULL, NULL),
+('Río Duero (Zamora)', 'Castilla y León', 'Barbo,Carpa', 'Media', 'https://www.google.com/maps?q=Rio+Duero+Zamora', NULL, NULL, NULL, NULL),
+('Embalse de Buendía', 'Cuenca', 'Carpa', 'Media', 'https://www.google.com/maps?q=Embalse+de+Buendia', NULL, NULL, NULL, NULL),
+('Embalse de Entrepeñas', 'Guadalajara', 'Black Bass', 'Media', 'https://www.google.com/maps?q=Entrepenas', NULL, NULL, NULL, NULL),
+('Río Júcar', 'Valencia', 'Carpa', 'Media', 'https://www.google.com/maps?q=Rio+Jucar', NULL, NULL, NULL, NULL),
+('Mar Menor', 'Murcia', 'Dorada,Lubina', 'Media', 'https://www.google.com/maps?q=Mar+Menor', NULL, NULL, NULL, NULL),
+('Costa de Cádiz', 'Cádiz', 'Atún,Dorada', 'Alta', 'https://www.google.com/maps?q=Costa+de+Cadiz', NULL, NULL, NULL, NULL),
+('Ría de Vigo', 'Galicia', 'Lubina,Pulpo', 'Media', 'https://www.google.com/maps?q=Ria+de+Vigo', NULL, NULL, NULL, NULL);
+
+
+
 -- =====================================================
 -- FIN DEL SCRIPT
 -- =====================================================

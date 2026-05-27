@@ -270,9 +270,9 @@ p.subtitle {
 <header>
   <div class="container">
     <nav>
-      <a href="home.php" class="logo"><i class="fa-solid fa-fish"></i> Pasca y Pesca</a>
+    <a href="index.php" class="logo"><i class="fa-solid fa-fish"></i> Pasca y Pesca</a>
       <ul class="nav-links">
-        <li><a href="home.php">Inicio</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li><a href="tienda.php">Tienda</a></li>
         <li><a href="foro.php">Foro</a></li>
         <li><a href="tecnicas.php">Técnicas</a></li>
@@ -355,7 +355,7 @@ p.subtitle {
       </div>
       <div class="footer-column">
         <h3>Navegación</h3>
-        <a href="home.php">Inicio</a>
+        <a href="index.php">Inicio</a>
         <a href="tienda.php">Tienda</a>
         <a href="tecnicas.php">Técnicas</a>
         <a href="zonasCalientes.php">Zonas de Pesca</a>
@@ -384,7 +384,7 @@ p.subtitle {
         toast.className = 'toast';
         toast.innerHTML = '<i class="fa-solid fa-circle-check"></i> ¡Gracias por tu compra!';
         document.body.appendChild(toast);
-        setTimeout(()=>{ window.location.href = 'home.php'; }, 2200);
+        setTimeout(()=>{ window.location.href = 'index.php'; }, 2200);
     });
     </script>
 <?php unset($_SESSION['carrito']); ?>

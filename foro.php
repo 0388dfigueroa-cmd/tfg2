@@ -369,9 +369,9 @@ function responderA(usuario) {
 <header>
 <div class="container">
 <nav>
-  <a href="home.php" class="logo"><i class="fa-solid fa-fish"></i> Pasca y Pesca</a>
+  <a href="index.php" class="logo"><i class="fa-solid fa-fish"></i> Pasca y Pesca</a>
   <ul class="nav-links">
-    <li><a href="home.php">Inicio</a></li>
+    <li><a href="index.php">Inicio</a></li>
     <li><a href="tienda.php">Tienda</a></li>
     <li><a href="foro.php" class="active">Foro</a></li>
     <li><a href="tecnicas.php">Técnicas</a></li>
@@ -489,7 +489,7 @@ function responderA(usuario) {
       </div>
       <div class="footer-column">
         <h3>Navegación</h3>
-        <a href="home.php">Inicio</a>
+        <a href="index.php">Inicio</a>
         <a href="tienda.php">Tienda</a>
         <a href="tecnicas.php">Técnicas</a>
         <a href="zonasCalientes.php">Zonas de Pesca</a>

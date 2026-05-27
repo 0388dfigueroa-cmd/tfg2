@@ -457,7 +457,7 @@ $productsResult = $conn->query("SELECT id, nombre, precio, categoria, stock FROM
 <header>
   <div class="container">
     <nav>
-      <a href="home.php" class="logo"><i class="fa-solid fa-fish"></i> Pasca y Pesca</a>
+    <a href="index.php" class="logo"><i class="fa-solid fa-fish"></i> Pasca y Pesca</a>
       <ul class="nav-links">
         <li><a href="admin.php" class="active">Panel Admin</a></li>
         <li><a href="logout.php" class="btn btn-outline" style="padding:.42rem 1rem;font-size:.82rem;">Cerrar sesión</a></li>
@@ -638,7 +638,7 @@ $productsResult = $conn->query("SELECT id, nombre, precio, categoria, stock FROM
                                   </div>
                                   <div class="footer-column">
                                 <h3>Navegación</h3>
-                                <a href="home.php">Inicio</a>
+                                <a href="index.php">Inicio</a>
                                 <a href="tienda.php">Tienda</a>
                                 <a href="tecnicas.php">Técnicas</a>
                                 <a href="zonasCalientes.php">Zonas de Pesca</a>
