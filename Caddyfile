@@ -1,5 +1,5 @@
 :80 {
-	root * /app
+	root * .
 	encode gzip
 	@php_files {
 		path *.php
@@ -7,7 +7,17 @@
 	route @php_files {
 		php
 	}
+<<<<<<< sandbox/fix-caddyfile
+	@not_found {
+		not path *.php *.css *.js *.jpg *.jpeg *.png *.gif *.svg *.ico *.woff *.woff2
+	}
+	route @not_found {
+		rewrite * /index.php?{query}
+		php
+	}
+=======
 	try_files {path} {path}/ /index.php?{query}
+>>>>>>> main
 	file_server
 }
 
