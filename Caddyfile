@@ -1,0 +1,7 @@
+:80 {
+	root * /app/public
+	encode gzip
+	php_fastcgi unix//run/php-fpm.sock
+	file_server
+}
+
