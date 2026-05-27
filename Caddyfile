@@ -1,6 +1,6 @@
 :80 {
 	root * /app
 	encode gzip
-	php
+	php_handler
 	file_server
 }
