@@ -4,6 +4,7 @@ COPY . /var/www/html/
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-RUN echo "DirectoryIndex home.php" >> /etc/apache2/apache2.conf
+RUN printf '<Directory /var/www/html>\nDirectoryIndex home.php\n</Directory>' > /etc/apache2/conf-available/home.conf \
+    && a2enconf home
 
 EXPOSE 80
