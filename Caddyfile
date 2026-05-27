@@ -1,6 +1,11 @@
 :80 {
 	root * /app
 	encode gzip
-	php_handler
+	@php_files {
+		path *.php
+	}
+	route @php_files {
+		php
+	}
 	file_server
 }
