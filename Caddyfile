@@ -1,6 +1,6 @@
 :80 {
 	root * /app
 	encode gzip
-	php_fastcgi unix//run/php-fpm.sock
+	php
 	file_server
 }
